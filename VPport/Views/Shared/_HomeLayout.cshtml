@@ -1,12 +1,19 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link href="~/content/layout.css" rel="stylesheet" />
+    <link href="~/content/main.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
+
+    <div class="wrapper">
+        <nav>
+            <a href="">Work.</a>
+            <a href="">About.</a>
+            <a href="">Contact.</a>
+        </nav>
         @RenderBody()
     </div>
 </body>

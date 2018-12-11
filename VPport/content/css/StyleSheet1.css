@@ -1,0 +1,19 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+}
+
+    .wrapper nav {
+        height: 100vh;
+        grid-column: 1/2;
+        grid-row: 1/-1;
+        background: #ffd800;
+    }
