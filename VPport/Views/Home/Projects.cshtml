@@ -1,0 +1,17 @@
+﻿@model IEnumerable<VPport.Project>
+@{
+    ViewBag.Title = "Projects";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<h2>Projects</h2>
+
+@foreach (var item in Model)
+{
+    <h1>@item.Title</h1>
+    <p>@item.Teaser</p>
+    <p>@item.Image</p>
+    <p>@item.Symbol</p>
+    <img src="~/Content/img/symbols/@item.Symbol" alt="@item.Symbol" />
+    <p>@item.Description</p>
+}

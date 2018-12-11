@@ -1,0 +1,13 @@
+﻿@model IEnumerable<VPport.About>
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<h2>About</h2>
+
+@foreach (var item in Model)
+{
+    @Html.Raw(item.about1);
+}
+

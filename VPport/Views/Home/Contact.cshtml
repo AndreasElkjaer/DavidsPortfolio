@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<h2>Contact</h2>
+
+<form action="/Home/Contact" method="post">
+    <label class="labels" for="MailName">Navn:</label>
+    <input type="text" id="MailName" name="MailName" class="inputstyle" value=" " />
+    <label class="labels" for="MailEmail">Email:</label>
+    <input type="text" id="MailEmail" name="MailEmail" class="inputstyle" value=" ">
+    <label class="labels" for="MailPhone">Telefonnr. :</label>
+    <input type="text" id="MailPhone" name="MailPhone" class="inputstyle" value=" " />
+    <label class="labels" for="MailMessage">Besked:</label>
+    <textarea id="MailMessage" name="MailMessage"></textarea>
+    <input type="submit" class="inputbtn" name="sendmail" value="Send besked " />
+</form>

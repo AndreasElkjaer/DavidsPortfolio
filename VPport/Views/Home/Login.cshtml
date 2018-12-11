@@ -1,0 +1,16 @@
+﻿@model VPport.Models.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<h2>Login</h2>
+
+
+<form action="/Home/Login" method="post">
+    <input type="text" name="user.UserName" placeholder="Username" />
+    <br />
+    <input type="password" name="user.UserPassword" placeholder="Password" />
+    <br />
+    <input type="submit" name="btnsubmit" value="Login" /> @Model.Errmsg
+</form>
