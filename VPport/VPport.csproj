@@ -96,6 +96,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\layout.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\video\bird-rig_1.mp4" />
+    <Content Include="Content\video\bird-rig_1_1.mp4" />
     <Content Include="Global.asax" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -177,7 +181,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\css\" />
     <Folder Include="Content\img\projects\" />
     <Folder Include="Content\img\symbols\" />
     <Folder Include="Content\js\" />

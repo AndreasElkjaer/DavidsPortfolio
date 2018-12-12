@@ -12,7 +12,7 @@ main {
     height: 100vh;
     grid-column: 2/-1;
     grid-row: 1/-1;
-    background: #00ffff;
+    
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 300px 1fr;
@@ -42,3 +42,16 @@ main {
         font-size: 190px;
         transform: translate(0, -53%);
     }
+
+.mainIndexContent {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+
+    }
+
+.mainIndexContent video{
+    display: grid;
+   max-height: 100vh;
+}
