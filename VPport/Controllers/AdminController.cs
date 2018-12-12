@@ -110,7 +110,7 @@ namespace VPport.Controllers
         }
 
         // POST: Delete/{id}
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteProject")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
