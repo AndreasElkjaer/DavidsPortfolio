@@ -96,8 +96,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\admin\buttons.css" />
+    <Content Include="Content\css\admin\calendar.css" />
+    <Content Include="Content\css\admin\forms.css" />
+    <Content Include="Content\css\admin\stats.css" />
+    <Content Include="Content\css\admin\styles.css" />
+    <Content Include="Content\css\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Content\css\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\css\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\css\bootstrap\js\bootstrap.min.js" />
     <Content Include="Content\img\symbols\light.svg" />
     <Content Include="Content\img\symbols\sound.svg" />
+    <Content Include="Content\js\admin\calendar.js" />
+    <Content Include="Content\js\admin\custom.js" />
+    <Content Include="Content\js\admin\editors.js" />
+    <Content Include="Content\js\admin\forms.js" />
+    <Content Include="Content\js\admin\stats.js" />
+    <Content Include="Content\js\admin\tables.js" />
+    <Content Include="Content\js\admin\vendors\datatables\dataTables.bootstrap.css" />
+    <Content Include="Content\js\admin\vendors\datatables\dataTables.bootstrap.js" />
     <Content Include="Global.asax" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -157,6 +177,9 @@
     <Content Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\css\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\css\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\css\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_HomeLayout.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
@@ -181,9 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\css\" />
     <Folder Include="Content\img\projects\" />
-    <Folder Include="Content\js\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
