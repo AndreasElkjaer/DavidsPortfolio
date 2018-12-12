@@ -56,6 +56,7 @@ namespace VPport.Controllers
         {
             if (ModelState.IsValid)
             {
+                Guid FileId = Guid.NewGuid();
                 string[] Ex = { ".jpg", ".png", ".gif"};
                 IOTools.FileUploader("~/Content/img/projects", FileId.ToString(), Image, Ex);
 
