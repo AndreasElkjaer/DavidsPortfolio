@@ -96,6 +96,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\symbols\light.svg" />
+    <Content Include="Content\img\symbols\sound.svg" />
     <Content Include="Global.asax" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -169,6 +171,7 @@
     <Content Include="Views\Admin\Projects.cshtml" />
     <Content Include="Views\Admin\EditAbout.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -180,7 +183,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\css\" />
     <Folder Include="Content\img\projects\" />
-    <Folder Include="Content\img\symbols\" />
     <Folder Include="Content\js\" />
   </ItemGroup>
   <ItemGroup>

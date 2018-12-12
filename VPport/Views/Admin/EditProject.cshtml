@@ -46,8 +46,8 @@
             <div class="col-md-10">
 
                 @Html.DropDownListFor(model => model.Symbol, new List<SelectListItem>
-                  { new SelectListItem{Text="Symbol1", Value="Symbol1.jpg"},
-                    new SelectListItem{Text="Symbol2", Value="Symbol2.jpg",  Selected = true},
+                  { new SelectListItem{Text="Light", Value="light.svg"},
+                    new SelectListItem{Text="Sound", Value="sound.svg",  Selected = true},
                     })
                 @Html.ValidationMessageFor(model => model.Symbol, "", new { @class = "text-danger" })
 

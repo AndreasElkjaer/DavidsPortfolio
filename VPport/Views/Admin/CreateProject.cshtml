@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <div class="form-group"> <!-- Add upload function-->
+        <div class="form-group">
             @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.TextBoxFor(model => model.Image, new { type = "file", htmlAttributes = new { @class = "form-control" } })
@@ -39,13 +39,13 @@
             </div>
         </div>
 
-        <div class="form-group"> <!-- Fix dropdown selection-->
+        <div class="form-group">
             @Html.LabelFor(model => model.Symbol, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
 
                 @Html.DropDownListFor(model => model.Symbol, new List<SelectListItem>
-                   { new SelectListItem{Text="Symbol1", Value="Symbol1.jpg"},
-                     new SelectListItem{Text="Symbol2", Value="Symbol2.jpg",  Selected = true},
+                   { new SelectListItem{Text="Light", Value="light.svg"},
+                     new SelectListItem{Text="Sound", Value="sound.svg",  Selected = true},
                      })
                 @Html.ValidationMessageFor(model => model.Symbol, "", new { @class = "text-danger" })
 
