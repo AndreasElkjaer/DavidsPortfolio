@@ -52,10 +52,15 @@ namespace VPport.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult CreateProject([Bind(Include = "Id,Title,Teaser,Image,Symbol,Description")] Project project)
+        public ActionResult CreateProject([Bind(Include = "Id,Title,Teaser,Image,Symbol,Description")] Project project, HttpPostedFileBase Image)
         {
             if (ModelState.IsValid)
             {
+                string[] Ex = { ".jpg", ".png", ".gif"};
+                IOTools.FileUploader("~/Content/img/projects", FileId.ToString(), Image, Ex);
+
+                project.Image = FileId + "_" + Image.FileName;
+
                 db.Projects.Add(project);
                 db.SaveChanges();
                 return RedirectToAction("Projects");
