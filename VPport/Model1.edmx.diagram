@@ -7,7 +7,7 @@
       <Diagram DiagramId="5ff838a3eab2400badc72052b62ef425" Name="Diagram1">
         <EntityTypeShape EntityType="dbPortModel.Project" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="dbPortModel.User" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="dbPortModel.About" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="dbPortModel.About" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

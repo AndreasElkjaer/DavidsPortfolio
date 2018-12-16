@@ -1,0 +1,13 @@
+﻿@model IEnumerable<VPport.About>
+@{
+    ViewBag.Title = "test";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+        @foreach (var item in Model)
+        {
+
+              @item.about1
+
+        }

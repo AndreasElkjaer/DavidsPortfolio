@@ -26,6 +26,11 @@ namespace VPport.Controllers
         {
             return View(db.Projects.ToList());
         }
+        // Test about page
+        public ActionResult test()
+        {
+            return View(db.Abouts.ToList());
+        }
 
         // GET: ProjectDetails/{id}
         public ActionResult ProjectDetails(int? id)
