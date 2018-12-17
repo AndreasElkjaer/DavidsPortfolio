@@ -19,17 +19,12 @@ namespace VPport.Controllers
         public ActionResult LogOut()
         {
             Session.RemoveAll();
-            return Redirect("~/Home/Index");
+            return RedirectToAction("Index", "Home");
         }
         // GET: Projects
         public ActionResult Projects()
         {
             return View(db.Projects.ToList());
-        }
-        // Test about page
-        public ActionResult test()
-        {
-            return View(db.Abouts.ToList());
         }
 
         // GET: ProjectDetails/{id}
@@ -69,7 +64,7 @@ namespace VPport.Controllers
 
                 db.Projects.Add(project);
                 db.SaveChanges();
-                return RedirectToAction("Projects");
+                return RedirectToAction("Projects", "Admin");
             }
 
             return View(project);
@@ -100,7 +95,7 @@ namespace VPport.Controllers
             {
                 db.Entry(project).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Projects");
+                return RedirectToAction("Projects", "Admin");
             }
             return View(project);
         }
@@ -128,7 +123,7 @@ namespace VPport.Controllers
             Project project = db.Projects.Find(id);
             db.Projects.Remove(project);
             db.SaveChanges();
-            return RedirectToAction("Projects");
+            return RedirectToAction("Projects", "Admin");
         }
 
         // About page
@@ -151,15 +146,16 @@ namespace VPport.Controllers
         // POST: EditAbout/1
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [ValidateInput(false)]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult EditAbout([Bind(Include = "Id,About")] About about)
+        public ActionResult EditAbout([Bind(Include = "Id,about1")] About about)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(about).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("index");
+                return RedirectToAction("index", "Admin");
             }
             return View(about);
         }
