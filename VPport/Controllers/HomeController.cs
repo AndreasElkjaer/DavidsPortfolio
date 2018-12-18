@@ -18,8 +18,13 @@ namespace VPport.Controllers
         // GET: Projects
         public ActionResult Projects()
         {
-            var projects = db.Projects.OrderByDescending(o => o.Id).Take(6);
-            return View(projects.ToList());
+            return View();
+        }
+        public ActionResult ListProjects()
+        {
+            //var projects = db.Projects.OrderByDescending(o => o.Id).Take(8);
+           return View(db.Projects.ToList());
+            //return View();
         }
         // GET: About
         public ActionResult About()

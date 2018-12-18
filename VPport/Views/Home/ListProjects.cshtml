@@ -1,0 +1,132 @@
+﻿@{
+    dbPortEntities db = new dbPortEntities();
+    List<Project> projekter = new List<Project>();
+
+    projekter = db.Projects.OrderByDescending(o => o.Id).Take(8).ToList();
+
+    var CustomClass = "";
+    var ModalClass = "";
+    var ModalSlide = "";
+    var i = 1;
+    var j = 1;
+
+
+}
+<div class="maincontent">
+    <ul class="colors">
+        @foreach (var item in projekter)
+        {
+            switch (i)
+            {
+                case 1:
+                    CustomClass = CustomClass = "slide1 span8 tall3";
+                    break;
+                case 2:
+                    CustomClass = CustomClass = "slide2 span6 tall4";
+                    break;
+                case 3:
+                    CustomClass = CustomClass = "slide3 span5 tall7";
+                    break;
+                case 4:
+                    CustomClass = CustomClass = "slide4 span3 tall5";
+                    break;
+                case 5:
+                    CustomClass = CustomClass = "slide5 span6 tall5";
+                    break;
+                case 6:
+                    CustomClass = CustomClass = "slide6 span3 tall5";
+                    break;
+                case 7:
+                    CustomClass = CustomClass = "slide7 span6 tall4";
+                    break;
+                case 8:
+                    CustomClass = CustomClass = "slide8 span5 tall3";
+                    break;
+
+            }
+            i++;
+            <li class="@CustomClass">
+                <div class="hovereffect">
+                    <img class="bg_img_gallery" src="~/Content/img/projects/@item.Image" />
+                    <div class="modal-open overlay">
+                        <h2>@item.Title</h2>
+                        <img class="gfx_sign" src="~/Content/img/symbols/@item.Symbol" />
+                    </div>
+                </div>
+            </li>
+
+        }
+
+
+
+    </ul>
+    @foreach (var item2 in projekter)
+    {
+        switch (j)
+        {
+            case 1:
+                ModalClass = ModalClass = "modal1";
+                ModalSlide = ModalSlide = "slide1";
+                break;
+            case 2:
+                ModalClass = ModalClass = "modal2";
+                ModalSlide = ModalSlide = "slide2";
+                break;
+            case 3:
+                ModalClass = ModalClass = "modal3";
+                ModalSlide = ModalSlide = "slide3";
+                break;
+            case 4:
+                ModalClass = ModalClass = "modal4";
+                ModalSlide = ModalSlide = "slide4";
+                break;
+            case 5:
+                ModalClass = ModalClass = "modal5";
+                ModalSlide = ModalSlide = "slide5";
+                break;
+            case 6:
+                ModalClass = ModalClass = "modal6";
+                ModalSlide = ModalSlide = "slide6";
+                break;
+            case 7:
+                ModalClass = ModalClass = "modal7";
+                ModalSlide = ModalSlide = "slide7";
+                break;
+            case 8:
+                ModalClass = ModalClass = "modal8";
+                ModalSlide = ModalSlide = "slide8";
+                break;
+
+        }
+        j++;
+        <div class="@ModalClass">
+            <div class="shadow @ModalSlide box">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="fade-in box">
+
+
+                <div class="project_top">
+                    <img src="~/Content/img/projects/@item2.Image" />
+                </div>
+
+                <div class="project_mid">
+                    <h2>@item2.Title</h2>
+                    <p>
+                         @item2.Description
+                    </p>
+                </div>
+
+                <div class="project_vid">
+                    <video controls="controls">
+                        <source src="~/Content/video/fil.mp4" type="video/mp4" />
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    }
+
+
+
+</div>
