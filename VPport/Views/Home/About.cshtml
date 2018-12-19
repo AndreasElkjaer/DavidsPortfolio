@@ -1,13 +1,50 @@
 ﻿@model IEnumerable<VPport.About>
 @{
     ViewBag.Title = "About";
-    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+    Layout = "~/Views/shared/_HomeLayout.cshtml";
 }
 
-<h2>About</h2>
+<!--PRELOADER-->
+<div class="preloader-wrapper-red preloader-red">
 
-@foreach (var item in Model)
-{
-    @Html.Raw(item.about1);
-}
+    <div class="wrap2 preloader">
+        <div class="boxcube2">
+            <div class="boxfront face1" style="background-image:url('/Content/img/david logo.png');background-size:cover;background-position:bottom;"></div>
+            <div class="boxback face1" style="background-image:url('/Content/img/david logo.png');background-size:cover;background-position:bottom;"></div>
+            <div class="boxtop face1" style="background-color:#FA715E;"></div>
+            <div class="boxbottom face1" style="background-color:#FA715E;"></div>
+            <div class="boxleft face1" style="background-color:#FA715E;"><div class="face2"></div></div>
+            <div class="boxright face1" style="background-color:#FA715E;"><div class="face2"></div></div>
+        </div>
+    </div>
+
+</div>
+<!--PRELOADER-->
+
+<main>
+    <div class="maintop">
+        <div class="logobox">
+            <a style=" text-decoration:none;" href="/home/Index">
+                <h1>Dav</h1>
+                <h1>id.</h1>
+            </a>
+        </div>
+        <div style="background-color: #FA715E" class="main_top_color_about">
+            <h2>About<span style="color: white">.</span></h2>
+        </div>
+    </div>
+    <div style="background-color: #FA715E" class="maincontent_about">
+        <div id="tekstindhold">
+            @foreach (var item in Model)
+        {
+            @Html.Raw(item.about1);
+        }
+        </div>
+    </div>
+</main>
+
+@*@foreach (var item in Model)
+    {
+        @Html.Raw(item.about1);
+    }*@
 

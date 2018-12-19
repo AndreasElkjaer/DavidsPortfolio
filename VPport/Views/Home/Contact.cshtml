@@ -1,19 +1,67 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Contact";
-    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+    Layout = "~/Views/shared/_HomeLayout.cshtml";
 }
 
-<h2>Contact</h2>
+<!--PRELOADER-->
+<div class="preloader-wrapper-purple preloader-purple">
 
-<form action="/Home/Contact" method="post">
-    <label class="labels" for="MailName">Navn:</label>
-    <input type="text" id="MailName" name="MailName" class="inputstyle" value=" " />
-    <label class="labels" for="MailEmail">Email:</label>
-    <input type="text" id="MailEmail" name="MailEmail" class="inputstyle" value=" ">
-    <label class="labels" for="MailPhone">Telefonnr. :</label>
-    <input type="text" id="MailPhone" name="MailPhone" class="inputstyle" value=" " />
-    <label class="labels" for="MailMessage">Besked:</label>
-    <textarea id="MailMessage" name="MailMessage"></textarea>
-    <input type="submit" class="inputbtn" name="sendmail" value="Send besked " />
-</form>
+    <div class="wrap2 preloader">
+        <div class="boxcube2">
+            <div class="boxfront face1" style="background-image:url('/Content/img/david logo.png');background-size:cover;background-position:bottom;"></div>
+            <div class="boxback face1" style="background-image:url('/Content/img/david logo.png');background-size:cover;background-position:bottom;"></div>
+            <div class="boxtop face1" style="background-color:#7D63C0;"></div>
+            <div class="boxbottom face1" style="background-color:#7D63C0;"></div>
+            <div class="boxleft face1" style="background-color:#7D63C0;"><div class="face2"></div></div>
+            <div class="boxright face1" style="background-color:#7D63C0;"><div class="face2"></div></div>
+        </div>
+    </div>
+
+</div>
+<!--PRELOADER-->
+
+<main>
+    <div class="maintop">
+
+        <div class="logobox">
+            <a style=" text-decoration:none;" href="/home/Index">
+                <h1>Dav</h1>
+                <h1>id.</h1>
+            </a>
+        </div>
+        <div class="main_top_color_contact">
+
+            <h2>Contact<span style="color: white">.</span></h2>
+        </div>
+    </div>
+    <div class="maincontentContact">
+
+
+
+        <form class="form">
+            <div style="display:block;margin-left:auto;margin-right:auto;">
+                @*<a href="#">
+                        <i class="fab fa-linkedin soMeIcon"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram soMeIcon"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook soMeIcon"></i>
+                    </a>*@
+            </div>
+            <h2>GET IN TOUCH</h2>
+            <p type="Name:"><input placeholder="Write your name here.."></p>
+            <p type="Email:"><input placeholder="Let me know how to contact you back.."></input></p>
+            <p type="Message:"><textarea placeholder="What would you like to tell me.."></textarea></p>
+            <button class="contactButton">Send Message</button>
+
+        </form>
+
+
+    </div>
+
+
+
+</main>

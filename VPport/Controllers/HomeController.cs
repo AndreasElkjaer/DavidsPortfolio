@@ -20,6 +20,10 @@ namespace VPport.Controllers
         {
             return View();
         }
+        public ActionResult Contact()
+        {
+            return View();
+        }
         public ActionResult ListProjects()
         {
             //var projects = db.Projects.OrderByDescending(o => o.Id).Take(8);
@@ -68,10 +72,6 @@ namespace VPport.Controllers
             return View(UserLogin);
 
 
-        }
-        public ActionResult Contact()
-        {
-            return View();
         }
         [HttpPost]
         public ActionResult Contact(VPport.Models.MailViewModel myMail)

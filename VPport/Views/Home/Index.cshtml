@@ -1,8 +1,62 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_HomeLayout.cshtml";
-
+    Layout = "~/Views/shared/_HomeLayout.cshtml";
 }
+<!--PRELOADER-->
+<div class="preloader-wrapper-yellow preloader-yellow">
 
-<h2>Index HOME</h2>
+    <div class="wrap2 preloader">
+        <div class="boxcube2">
+            <div class="boxfront face1" style="background-image:url('/Content/img/david logo.png');background-size:cover;background-position:bottom;"></div>
+            <div class="boxback face1" style="background-image:url('/Content/img/david logo.png');background-size:cover;background-position:bottom;"></div>
+            <div class="boxtop face1" style="background-color:#EAC042;"></div>
+            <div class="boxbottom face1" style="background-color:#EAC042;"></div>
+            <div class="boxleft face1" style="background-color:#EAC042;"><div class="face2"></div></div>
+            <div class="boxright face1" style="background-color:#EAC042;"><div class="face2"></div></div>
+        </div>
+    </div>
+
+</div>
+<!--PRELOADER-->
+
+<main>
+    <div class="maintop">
+
+        <div class="logobox">
+            <a style=" text-decoration:none;" href="/home/Index">
+                <h1>Dav</h1>
+                <h1>id.</h1>
+            </a>
+        </div>
+        <div class="main_top_color_Index">
+
+            @*<h2>Contact<span style="color: white">.</span></h2>*@
+        </div>
+    </div>
+    <div class="maincontentIndex">
+
+        <div class="indexTextBox">
+            <h1 data-heading="Slide">Greetings!</h1>
+
+            <h2>
+                I'm David - a light &amp; sound technician <br />
+
+                <span style="font-size:1rem;color:white;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Donec suscipit augue a vehicula volutpat. <br /> Nulla convallis egestas velit, at vestibulum magna. <br /> In sed porta justo.
+                </span>
+            </h2>
+        </div>
+
+        <video class="indexVideo" playsinline autoplay muted loop>
+            <source src="~/Content/video/Comp 4.mp4" type="video/mp4" />
+        </video>
+
+
+
+
+
+    </div>
+
+
+
+</main>

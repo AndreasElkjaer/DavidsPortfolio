@@ -110,6 +110,8 @@
     <Content Include="Content\css\bootstrap\js\bootstrap.min.js" />
     <Content Include="Content\css\layout.css" />
     <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\projects.css" />
+    <Content Include="Content\img\david logo.png" />
     <Content Include="Content\img\projects\lys1.PNG" />
     <Content Include="Content\img\projects\lys2.PNG" />
     <Content Include="Content\img\projects\lys3.PNG" />
@@ -117,8 +119,8 @@
     <Content Include="Content\img\projects\sound2.PNG" />
     <Content Include="Content\img\projects\sound3.PNG" />
     <Content Include="Content\img\projects\sound4.PNG" />
-    <Content Include="Content\img\symbols\light.svg" />
-    <Content Include="Content\img\symbols\sound.svg" />
+    <Content Include="Content\img\symbols\Light.svg" />
+    <Content Include="Content\img\symbols\Sound.svg" />
     <Content Include="Content\js\admin\calendar.js" />
     <Content Include="Content\js\admin\custom.js" />
     <Content Include="Content\js\admin\editors.js" />
@@ -128,6 +130,7 @@
     <Content Include="Content\js\admin\vendors\datatables\dataTables.bootstrap.css" />
     <Content Include="Content\js\admin\vendors\datatables\dataTables.bootstrap.js" />
     <Content Include="Content\js\JavaScript.js" />
+    <Content Include="Content\video\Comp 4.mp4" />
     <Content Include="Content\video\fil.mp4" />
     <Content Include="Global.asax" />
     <Content Include="Model1.Context.tt">
