@@ -241,12 +241,67 @@ main.contact {
     margin-top: 50px;
 }
 
-.mainContactContent {
+.maincontentContact {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
     height: 69vh;
 }
+
+
+
+
+    .maincontentContact .contact_text_container {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+        .maincontentContact .contact_text_container h2 {
+            font-size: 60px;
+            margin-bottom: 30px;
+            margin-top: 60px;
+            color: white;
+        }
+
+        .maincontentContact .contact_text_container i {
+            font-size: 60px;
+            margin-left: 50%;
+            margin-top: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            transition: 0.35s;
+        }
+
+
+
+.btn_social {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    border-style: solid;
+    background-color: white;
+    border-color: white;
+    border-radius: 500px;
+    transition: 0.35s;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+    .btn_social:hover {
+        background-color: black;
+        border-color: black;
+    }
+
+        .btn_social:hover i {
+            color: white;
+        }
+
+
+
+
+
+
+
 
 .socialmediaContainer {
     width: 80px;
@@ -480,6 +535,7 @@ body.preloader-site {
     left: 0;
     z-index: 9999999;
 }
+
 .preloader-wrapper .preloader-blue {
     height: 100%;
     width: 100%;
@@ -519,6 +575,7 @@ body.preloader-site {
     left: 0;
     z-index: 9999999;
 }
+
 .preloader-wrapper-blue {
     height: 100%;
     width: 100%;
@@ -717,7 +774,6 @@ main .logobox {
     grid-row: 2/-1;
     margin-bottom: 70px;
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: auto;
     background: #7D63C0;
     margin-bottom: 40px;
